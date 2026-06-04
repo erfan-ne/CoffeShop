@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "../components/templates/Home/Slider";
 import About from "@/components/templates/Home/About";
 import Services from "@/components/templates/Home/Services";
+import Offer from "@/components/templates/Home/Offer";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Slider />
       <About />
       <Services/>
+      <Offer/>
     </>
   );
 }
