@@ -4,6 +4,7 @@ import About from "@/components/templates/Home/About";
 import Services from "@/components/templates/Home/Services";
 import Offer from "@/components/templates/Home/Offer";
 import Menu from "@/components/templates/Home/Menu";
+import Reservation from "@/components/templates/Home/Reservation";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Services/>
       <Offer/>
       <Menu/>
+      <Reservation/>
     </>
   );
 }
