@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as SolidIcons from "@fortawesome/free-solid-svg-icons"
+import * as BrandIcons from "@fortawesome/free-brands-svg-icons";
 
 function PageFooter() {
   return (
@@ -31,16 +34,16 @@ function PageFooter() {
           <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
           <div class="d-flex justify-content-start">
             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#">
-              <i class="fab fa-twitter"></i>
+              <FontAwesomeIcon icon={BrandIcons.faTwitter} />
             </a>
             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#">
-              <i class="fab fa-facebook-f"></i>
+              <FontAwesomeIcon icon={BrandIcons.faLinkedinIn} />
             </a>
             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#">
-              <i class="fab fa-linkedin-in"></i>
+              <FontAwesomeIcon icon={BrandIcons.faFacebookF} />
             </a>
             <a class="btn btn-lg btn-outline-light btn-lg-square" href="#">
-              <i class="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={BrandIcons.faTelegram} />
             </a>
           </div>
         </div>
@@ -96,8 +99,8 @@ function PageFooter() {
         </p>
         <p class="m-0 text-white">
           Designed by{" "}
-          <a class="font-weight-bold" href="https://htmlcodex.com">
-            HTML Codex
+          <a class="font-weight-bold" href="https://github.com/erfan-ne">
+            Erfan
           </a>
         </p>
       </div>
