@@ -7,30 +7,31 @@ import Menu from "@/components/templates/Home/Menu";
 import Reservation from "@/components/templates/Home/Reservation";
 import Testimonial from "@/components/templates/Home/Testimonial";
 
-function Home({services}) {
+function Home({ data }) {
   return (
-    <>    
+    <>
       <Slider />
       <About />
-      <Services Services={services}/>
-      <Offer/>
-      <Menu/>
-      <Reservation/>
+      <Services Services={data.services} />
+      <Offer />
+      <Menu />
+      <Reservation />
       <Testimonial />
     </>
   );
 }
 
-export async function getStaticProps(){
-
+export async function getStaticProps() {
   const res = await fetch("http://localhost:3001/services");
-  const data = await res.json()
+  const services = await res.json();
 
-  return{
-    props:{
-      services: data
-    }
-  }
+  return {
+    props: {
+      data:{
+        services
+      }
+    },
+  };
 }
 
 export default Home;
