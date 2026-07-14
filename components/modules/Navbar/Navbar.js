@@ -41,15 +41,15 @@ function Navbar() {
                 Pages
               </a>
               <div className={`${styles.dropdown_menu} ${styles.text_capitalize}`}>
-                <a href="reservation.html" className={`${styles.dropdown_item}`}>
+                <a href="/reservation" className={`${styles.dropdown_item}`}>
                   Reservation
                 </a>
-                <a href="testimonial.html" className={`${styles.dropdown_item}`}>
+                <a href="/testimonial" className={`${styles.dropdown_item}`}>
                   Testimonial
                 </a>
               </div>
             </div>
-            <a href="contact.html" className={`${styles.nav_link}`}>
+            <a href="/contact" className={`${styles.nav_link}`}>
               Contact
             </a>
           </div>

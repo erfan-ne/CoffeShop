@@ -3,7 +3,7 @@ import Slider from "../components/templates/Home/Slider";
 import About from "@/components/templates/Home/About";
 import Services from "@/components/modules/Services/Services";
 import Offer from "@/components/templates/Home/Offer";
-import Reservation from "@/components/templates/Home/Reservation";
+import Reservation from "@/components/modules/Reservation/Reservation";
 import Testimonial from "@/components/templates/Home/Testimonial";
 import Menu from "@/components/templates/Home/Menu";
 

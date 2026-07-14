@@ -21,10 +21,7 @@ function Services({ Services }) {
           return (
             <ServiceItem
               key={service.id}
-              icon={service.icon}
-              img={service.img}
-              title={service.title}
-              text={service.text}
+              {...service}
             />
           );
         })}

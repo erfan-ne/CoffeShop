@@ -1,9 +1,14 @@
-import React from 'react'
+import PageHeader from "@/components/modules/PageHeader/PageHeader";
+import Reservation from "@/components/modules/Reservation/Reservation";
+import React from "react";
 
-function Reservation() {
+function ReservationPage() {
   return (
-    <h1>Reservation Page</h1>
-  )
+    <>
+      <PageHeader route="Reservation" />
+      <Reservation />
+    </>
+  );
 }
 
-export default Reservation
+export default ReservationPage;
