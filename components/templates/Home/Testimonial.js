@@ -3,19 +3,19 @@ import TetimonialItem from "@/components/modules/TestimonialItem/TetimonialItem"
 
 function Testimonial() {
   return (
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="section-title">
+    <div className="container-fluid py-5">
+      <div className="container">
+        <div className="section-title">
           <h4
-            class="text-primary text-uppercase"
+            className="text-primary text-uppercase"
             style={{ letterSpacing: "5px" }}
           >
             Testimonial
           </h4>
-          <h1 class="display-4">Our Clients Say</h1>
+          <h1 className="display-4">Our Clients Say</h1>
         </div>
 
-        <div class="owl-carousel testimonial-carousel">
+        <div className="owl-carousel testimonial-carousel">
           <TetimonialItem
             img={"images/testimonial-1.jpg"}
             name={"Client Name"}
