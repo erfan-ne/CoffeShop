@@ -1,11 +1,11 @@
 import React from "react";
-import AboutHeader from "@/components/templates/About/AboutHeader";
 import Story from "@/components/modules/Story/Story";
+import PageHeader from "@/components/modules/PageHeader/PageHeader";
 
 function About() {
   return (
     <>
-      <AboutHeader />
+      <PageHeader route="About Us" />
       <Story />
     </>
   );

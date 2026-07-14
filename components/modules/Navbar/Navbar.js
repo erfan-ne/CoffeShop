@@ -26,7 +26,7 @@ function Navbar() {
             <a href="/about" className={`${styles.nav_link}`}>
               About
             </a>
-            <a href="/service" className={`${styles.nav_link}`}>
+            <a href="/services" className={`${styles.nav_link}`}>
               Service
             </a>
             <a href="/menu" className={`${styles.nav_link}`}>
