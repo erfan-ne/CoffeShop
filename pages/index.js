@@ -14,7 +14,7 @@ function Home({ data }) {
       <About />
       <Services Services={data.services} />
       <Offer />
-      <Menu />
+      <Menu Menus={data.menus} />
       <Reservation />
       <Testimonial />
     </>
@@ -22,13 +22,17 @@ function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3001/services");
-  const services = await res.json();
+  const servicesResponse = await fetch("http://localhost:3001/services");
+  const servicesData = await servicesResponse.json();
+
+  const menuResponse = await fetch("http://localhost:3001/menu");
+  const menuData = await menuResponse.json();
 
   return {
     props: {
       data:{
-        services
+        services: servicesData,
+        menus: menuData
       }
     },
   };

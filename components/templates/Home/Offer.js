@@ -36,7 +36,7 @@ function Offer() {
               className="form-control p-4"
               placeholder="Your Email"
               style={{ height: "60px" }}
-              value={email}
+              defaultValue={email}
             />
             <div className="input-group-append">
               <button

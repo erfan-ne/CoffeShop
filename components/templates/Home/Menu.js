@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItem from "@/components/modules/MenuItem/MenuItem";
 
-function Menu() {
+function Menu({ Menus }) {
   return (
     <div className="container-fluid pt-5">
       <div className="container">
@@ -18,6 +18,18 @@ function Menu() {
         <div className="row">
           <div className="col-lg-6">
             <h1 className="mb-5">Hot Coffee</h1>
+
+            {Menus.map((menu) => {
+              return (
+                <MenuItem
+                  key={menu.id}
+                  img="images/menu-1.jpg"
+                  price="$5"
+                  title="Black Coffee"
+                  text="Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor"
+                />
+              );
+            })}
 
             <MenuItem
               img="images/menu-1.jpg"
