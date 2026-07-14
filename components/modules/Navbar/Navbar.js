@@ -34,8 +34,8 @@ function Navbar() {
             </a>
             <div className={`${styles.dropdown}`}>
               <a
-                href="#"
                 className={`${styles.nav_link} ${styles.dropdown_toggle}`}
+                style={{cursor:"pointer"}}
                 data-toggle="dropdown"
               >
                 Pages
