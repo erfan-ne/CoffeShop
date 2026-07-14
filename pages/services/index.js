@@ -2,24 +2,22 @@ import PageHeader from "@/components/modules/PageHeader/PageHeader";
 import React from "react";
 import Services from "@/components/modules/Services/Services";
 
-function ServicesPage({ data }) {
+function ServicesPage({ services }) {
   return (
     <>
       <PageHeader route="Services" />
-      <Services Services={data.services} />
+      <Services Services={services} />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const servicesResponse = await fetch("http://localhost:3001/services");
-  const servicesData = await servicesResponse.json();
+  const res = await fetch("http://localhost:3001/services");
+  const data = await res.json();
 
   return {
     props: {
-      data: {
-        services: servicesData,
-      },
+        services: data,
     },
   };
 }
