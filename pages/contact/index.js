@@ -1,8 +1,13 @@
+import PageHeader from '@/components/modules/PageHeader/PageHeader'
+import ContactPage from '@/components/templates/Contact/ContactPage'
 import React from 'react'
 
 function Contact() {
   return (
-    <h1>Contact Page</h1>
+    <>
+    <PageHeader route="Contact" />
+    <ContactPage />
+    </>
   )
 }
 
