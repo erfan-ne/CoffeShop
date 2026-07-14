@@ -46,11 +46,11 @@ function Reservation() {
                                 </div>
                                 <div className="form-group">
                                     <select className="custom-select bg-transparent border-primary px-4" style={{height: "49px"}}>
-                                        <option selected="">Person</option>
-                                        <option value="1">Person 1</option>
-                                        <option value="2">Person 2</option>
-                                        <option value="3">Person 3</option>
-                                        <option value="3">Person 4</option>
+                                        <option select="">Person</option>
+                                        <option defaultValue="1">Person 1</option>
+                                        <option defaultValue="2">Person 2</option>
+                                        <option defaultValue="3">Person 3</option>
+                                        <option defaultValue="3">Person 4</option>
                                     </select>
                                 </div>
                                 
