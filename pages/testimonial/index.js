@@ -20,6 +20,7 @@ export async function getStaticProps() {
     props: {
         comments: data,
     },
+    revalidate: 60 * 60 * 12
   };
 }
 

@@ -39,6 +39,7 @@ export async function getStaticProps() {
         comments: commentsData,
       },
     },
+    revalidate: 60 * 60 * 12
   };
 }
 
