@@ -19,35 +19,17 @@ function MenuPage({ Menus }) {
           <div className="col-lg-6">
             <h1 className="mb-5">Hot Coffee</h1>
 
-            {Menus.filter((menu) => menu.type === "hot")
-              .map((menu) => {
-                return (
-                  <MenuItem
-                    key={menu.id}
-                    img={menu.img}
-                    price={`$${menu.price}`}
-                    title={menu.title}
-                    text={menu.desc}
-                  />
-                );
-              })}
+            {Menus.filter((menu) => menu.type === "hot").map((menu) => {
+              return <MenuItem key={menu.id} {...menu} />;
+            })}
           </div>
 
           <div className="col-lg-6">
             <h1 className="mb-5">Cold Coffee</h1>
 
-            {Menus.filter((menu) => menu.type === "cold")
-              .map((menu) => {
-                return (
-                  <MenuItem
-                    key={menu.id}
-                    img={menu.img}
-                    price={`$${menu.price}`}
-                    title={menu.title}
-                    text={menu.desc}
-                  />
-                );
-              })}
+            {Menus.filter((menu) => menu.type === "cold").map((menu) => {
+              return <MenuItem key={menu.id} {...menu} />;
+            })}
           </div>
         </div>
       </div>

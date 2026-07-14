@@ -1,7 +1,6 @@
 import MenuItem from "@/components/modules/Menu/MenuItem";
 import React from "react";
 
-
 function Menu({ Menus }) {
   return (
     <div className="container-fluid pt-5">
@@ -23,15 +22,7 @@ function Menu({ Menus }) {
             {Menus.filter((menu) => menu.type === "hot")
               .slice(0, 3)
               .map((menu) => {
-                return (
-                  <MenuItem
-                    key={menu.id}
-                    img={menu.img}
-                    price={`$${menu.price}`}
-                    title={menu.title}
-                    text={menu.desc}
-                  />
-                );
+                return <MenuItem key={menu.id} {...menu} />;
               })}
           </div>
 
@@ -41,15 +32,7 @@ function Menu({ Menus }) {
             {Menus.filter((menu) => menu.type === "cold")
               .slice(0, 3)
               .map((menu) => {
-                return (
-                  <MenuItem
-                    key={menu.id}
-                    img={menu.img}
-                    price={`$${menu.price}`}
-                    title={menu.title}
-                    text={menu.desc}
-                  />
-                );
+                return <MenuItem key={menu.id} {...menu} />;
               })}
           </div>
         </div>
