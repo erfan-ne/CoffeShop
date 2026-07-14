@@ -9,10 +9,10 @@ function TetimonialItem({img, name, profession, text}) {
           <h4>{name}</h4>
           <i>{profession}</i>
         </div>
-      </div>
-      <p className="m-0">
+      <p className="m-4">
         {text}
       </p>
+      </div>
     </div>
   );
 }

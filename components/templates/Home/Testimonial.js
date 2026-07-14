@@ -1,7 +1,7 @@
 import React from "react";
 import TetimonialItem from "@/components/modules/TestimonialItem/TetimonialItem";
 
-function Testimonial() {
+function Testimonial({ Comments }) {
   return (
     <div className="container-fluid py-5">
       <div className="container">
@@ -16,38 +16,18 @@ function Testimonial() {
         </div>
 
         <div className="owl-carousel testimonial-carousel">
-          <TetimonialItem
-            img={"images/testimonial-1.jpg"}
-            name={"Client Name"}
-            profession={"Profession"}
-            text={
-              "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita"
-            }
-          />
-          <TetimonialItem
-            img={"images/testimonial-2.jpg"}
-            name={"Client Name"}
-            profession={"Profession"}
-            text={
-              "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita"
-            }
-          />
-          <TetimonialItem
-            img={"images/testimonial-3.jpg"}
-            name={"Client Name"}
-            profession={"Profession"}
-            text={
-              "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita"
-            }
-          />
-          <TetimonialItem
-            img={"images/testimonial-4.jpg"}
-            name={"Client Name"}
-            profession={"Profession"}
-            text={
-              "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita"
-            }
-          />
+          {Comments.slice(0,4).map((comment) => {
+            return(
+            <TetimonialItem
+            key={comment.id}
+              img={comment.img}
+              name={comment.userName}
+              profession={comment.profession}
+              text={comment.body}
+            />
+            )
+          })}
+
         </div>
       </div>
     </div>

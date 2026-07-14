@@ -16,7 +16,7 @@ function Home({ data }) {
       <Offer />
       <Menu Menus={data.menus} />
       <Reservation />
-      <Testimonial />
+      <Testimonial Comments={data.comments} />
     </>
   );
 }
@@ -26,14 +26,18 @@ export async function getStaticProps() {
   const servicesData = await servicesResponse.json();
 
   const menuResponse = await fetch("http://localhost:3001/menu");
-  const menuData = await menuResponse.json();
+  const menusData = await menuResponse.json();
+
+  const commentsResponse = await fetch("http://localhost:3001/comments");
+  const commentsData = await commentsResponse.json();
 
   return {
     props: {
-      data:{
+      data: {
         services: servicesData,
-        menus: menuData
-      }
+        menus: menusData,
+        comments: commentsData,
+      },
     },
   };
 }
