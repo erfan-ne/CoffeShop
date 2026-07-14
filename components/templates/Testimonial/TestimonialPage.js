@@ -1,9 +1,9 @@
-import React from "react";
-import TetimonialItem from "@/components/modules/TestimonialItem/TetimonialItem";
+import TetimonialItem from '@/components/modules/TestimonialItem/TetimonialItem';
+import React from 'react'
 
-function Testimonial({ Comments }) {
+function TestimonialPage({Comments}) {
   return (
-    <div className="container-fluid py-5">
+        <div className="container-fluid py-5">
       <div className="container">
         <div className="section-title">
           <h4
@@ -16,7 +16,7 @@ function Testimonial({ Comments }) {
         </div>
 
         <div className="owl-carousel testimonial-carousel">
-          {Comments.slice(0, 4).map((comment) => {
+          {Comments.map((comment) => {
             return (
               <TetimonialItem
                 key={comment.id}
@@ -30,7 +30,7 @@ function Testimonial({ Comments }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Testimonial;
+export default TestimonialPage
