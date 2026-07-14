@@ -15,13 +15,13 @@ function PageFooter() {
             Get In Touch
           </h4>
           <p>
-            <i className="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA
+            <FontAwesomeIcon icon={SolidIcons.faMapMarkerAlt} /> 123 Street, New York, USA
           </p>
           <p>
-            <i className="fa fa-phone-alt mr-2"></i>+012 345 67890
+            <FontAwesomeIcon icon={SolidIcons.faPhone} /> +012 345 67890
           </p>
           <p className="m-0">
-            <i className="fa fa-envelope mr-2"></i>info@example.com
+            <FontAwesomeIcon icon={SolidIcons.faEnvelope} /> info@example.com
           </p>
         </div>
         <div className="col-lg-3 col-md-6 mb-5">
