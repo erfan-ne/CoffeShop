@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import AboutHeader from "@/components/templates/About/AboutHeader";
+import Story from "@/components/modules/Story/Story";
 
 function About() {
   return (
-    <h1>About Page</h1>
-  )
+    <>
+      <AboutHeader />
+      <Story />
+    </>
+  );
 }
 
-export default About
+export default About;
