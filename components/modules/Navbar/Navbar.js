@@ -9,11 +9,13 @@ function Navbar() {
   const [search, setSearch] = useState("");
 
   const searchHandler = () => {
-    //code
+    if(search){
+      route.push(`/search?q=${search}`)
+    }
   };
 
   const searchHandlerWithEnter = () => {
-    //code
+    console.log(search);
   };
 
   return (
