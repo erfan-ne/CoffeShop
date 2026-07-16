@@ -8,7 +8,7 @@ function Resault({ Search }) {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <h1 className="mb-5" style={{ textAlign: "center" }}>
+              <h1 className="mb-5 ml-5">
                 Hot Coffee
               </h1>
 
@@ -18,7 +18,7 @@ function Resault({ Search }) {
             </div>
 
             <div className="col-lg-6">
-              <h1 className="mb-5" style={{ textAlign: "center" }}>
+              <h1 className="mb-5 ml-5">
                 Cold Coffee
               </h1>
 
