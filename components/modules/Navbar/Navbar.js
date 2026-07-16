@@ -5,17 +5,21 @@ import * as Icons from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 
 function Navbar() {
-  const route = useRouter()
+  const route = useRouter();
   const [search, setSearch] = useState("");
 
   const searchHandler = () => {
-    if(search){
-      route.push(`/search?q=${search}`)
+    if (search) {
+      route.push(`/search?q=${search}`);
     }
   };
 
-  const searchHandlerWithEnter = () => {
-    console.log(search);
+  const searchHandlerWithEnter = (e) => {
+    if (e.key === "Enter") {
+      if (search) {
+        route.push(`/search?q=${search}`);
+      }
+    }
   };
 
   return (
