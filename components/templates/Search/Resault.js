@@ -4,7 +4,6 @@ import React from "react";
 function Resault({ Search }) {
   return (
     <>
-    {console.log(Search)}
       {Search.length ? (
         <div className="container">
           <div className="row">
